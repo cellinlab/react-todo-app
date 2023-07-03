@@ -1,0 +1,76 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--bg-2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .closeBtn {
+      position: absolute;
+      z-index: -1;
+      top: -10px;
+      right: 0;
+      transform: translateY(-100%);
+      transition: all 0.3s ease;
+      padding: 0.5rem;
+      border-radius: 8px;
+      background-color: var(--gray-1);
+      color: var(--black-2);
+      font-size: 2.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: #e32525;
+        color: white;
+      }
+    }
+    .form {
+      width: 100%;
+      .form-title {
+        margin-bottom: 600;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--black-1);
+        text-transform: capitalize;
+      }
+      label {
+        font-size: 1.6rem;
+        color: var(--black-1);
+        input,
+        select {
+          margin-top: 0.5rem;
+          margin-bottom: 2rem;
+          width: 100%;
+          padding: 1rem;
+          border: none;
+          background-color: var(--white);
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .button-container {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "@/styles/_mixins.scss";
+.container {
+  .title {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--black-1);
+    @include smallDeviceSize {
+      font-size: 3rem;
+    }
+  }
+  .app-wrapper {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

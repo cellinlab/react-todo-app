@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  height: auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  overflow: hidden;
+  &__select {
+    width: 150px;
+    color: var(--black-2);
+    padding: 1rem;
+    border: none;
+    background-color: var(--bg-3);
+    cursor: pointer;
+  }
+}
+.button--primary {
+  background-color: var(--primaryPurple);
+  color: var(--white);
+}
+.button--secondary {
+  background-color: var(--bg-3);
+  color: var(--black-1);
+}
